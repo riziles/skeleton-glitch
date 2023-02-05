@@ -14,10 +14,10 @@
     "isEntry": true,
     "imports": [
       "_index2.js",
-      "_index.js"
+      "_ProgressBar.svelte_svelte_type_style_lang.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-01f0a0e4.css"
+      "_app/immutable/assets/_layout-b6110e2a.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -37,6 +37,18 @@
     ],
     "css": [
       "_app/immutable/assets/_page-4b5e1bdd.css"
+    ]
+  },
+  "src/routes/perspective/+page.svelte": {
+    "file": "entries/pages/perspective/_page.svelte.js",
+    "src": "src/routes/perspective/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_ProgressBar.svelte_svelte_type_style_lang.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-72647583.css"
     ]
   },
   ".svelte-kit/generated/server/internal.js": {
@@ -61,5 +73,15 @@
   },
   "_index2.js": {
     "file": "chunks/index2.js"
+  },
+  "_ProgressBar.svelte_svelte_type_style_lang.js": {
+    "file": "chunks/ProgressBar.svelte_svelte_type_style_lang.js",
+    "imports": [
+      "_index.js",
+      "_index2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/ProgressBar-b4579191.css"
+    ]
   }
 }

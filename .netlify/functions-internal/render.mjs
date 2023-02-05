@@ -6,11 +6,12 @@ export const handler = init({
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"_app/immutable/start-f11e169e.js","imports":["_app/immutable/start-f11e169e.js","_app/immutable/chunks/index-1d9c9dfc.js","_app/immutable/chunks/singletons-86596bbb.js","_app/immutable/chunks/index-36fa2c53.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-928b0860.js","imports":["_app/immutable/start-928b0860.js","_app/immutable/chunks/index-cf4e36fc.js","_app/immutable/chunks/singletons-e3b608e1.js","_app/immutable/chunks/index-6d563026.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
-			() => import('../server/nodes/2.js')
+			() => import('../server/nodes/2.js'),
+			() => import('../server/nodes/3.js')
 		],
 		routes: [
 			{
@@ -18,6 +19,13 @@ export const handler = init({
 				pattern: /^\/$/,
 				params: [],
 				page: { layouts: [0], errors: [1], leaf: 2 },
+				endpoint: null
+			},
+			{
+				id: "/perspective",
+				pattern: /^\/perspective\/?$/,
+				params: [],
+				page: { layouts: [0], errors: [1], leaf: 3 },
 				endpoint: null
 			}
 		],

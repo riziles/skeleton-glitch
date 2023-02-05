@@ -1,55 +1,8 @@
-import { g as get_store_value, c as create_ssr_component, e as escape, b as add_attribute, d as compute_slots, f as subscribe, h as createEventDispatcher, v as validate_component } from "../../chunks/index2.js";
-import { w as writable } from "../../chunks/index.js";
+import { c as create_ssr_component, e as escape, b as add_attribute, d as compute_slots, f as subscribe, g as createEventDispatcher, v as validate_component } from "../../chunks/index2.js";
+import { s as storeLightSwitch, a as storePrefersDarkScheme } from "../../chunks/ProgressBar.svelte_svelte_type_style_lang.js";
 const themeSkeleton = "";
 const all = "";
 const app = "";
-const stores = {};
-function getStorage(type) {
-  return type === "local" ? localStorage : sessionStorage;
-}
-function localStorageStore(key, initialValue, options) {
-  const serializer = options?.serializer ?? JSON;
-  const storageType = options?.storage ?? "local";
-  const browser = typeof window !== "undefined" && typeof document !== "undefined";
-  function updateStorage(key2, value) {
-    if (!browser)
-      return;
-    getStorage(storageType).setItem(key2, serializer.stringify(value));
-  }
-  if (!stores[key]) {
-    const store = writable(initialValue, (set2) => {
-      const json = browser ? getStorage(storageType).getItem(key) : null;
-      if (json) {
-        set2(serializer.parse(json));
-      }
-      if (browser) {
-        const handleStorage = (event) => {
-          if (event.key === key)
-            set2(event.newValue ? serializer.parse(event.newValue) : null);
-        };
-        window.addEventListener("storage", handleStorage);
-        return () => window.removeEventListener("storage", handleStorage);
-      }
-    });
-    const { subscribe: subscribe2, set } = store;
-    stores[key] = {
-      set(value) {
-        updateStorage(key, value);
-        set(value);
-      },
-      update(updater) {
-        const value = updater(get_store_value(store));
-        updateStorage(key, value);
-        set(value);
-      },
-      subscribe: subscribe2
-    };
-  }
-  return stores[key];
-}
-const storePrefersDarkScheme = localStorageStore("storePrefersDarkScheme", false);
-const storeLightSwitch = localStorageStore("storeLightSwitch", void 0);
-const AccordionItem_svelte_svelte_type_style_lang = "";
 const cBase = "flex items-center";
 const cLead = "flex-none flex justify-between items-center";
 const cCenter = "flex-auto";
@@ -170,8 +123,6 @@ const AppShell = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 	
 	${$$slots.footer ? `<footer id="${"shell-footer"}" class="${"flex-none " + escape(classesFooter, true)}">${slots.footer ? slots.footer({}) : ``}</footer>` : ``}</div>`;
 });
-const FileDropzone_svelte_svelte_type_style_lang = "";
-const ProgressBar_svelte_svelte_type_style_lang = "";
 const cTrack = "inline-block bg-surface-200-700-token ring-[1px] ring-surface-300-600-token ring-inset w-12 h-6 rounded-full cursor-pointer transition-all duration-[100ms]";
 const cThumb = "bg-white dark:bg-black fill-white dark:fill-black w-6 h-6 flex justify-center items-center rounded-full shadow-lg transition-all duration-[100ms] scale-90";
 const cIcon = "block w-4 h-4";

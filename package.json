@@ -30,6 +30,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@finos/perspective": "^1.9.3",
+		"@finos/perspective-viewer": "^1.9.3",
+		"@finos/perspective-viewer-d3fc": "^1.9.3",
+		"@finos/perspective-viewer-datagrid": "^1.9.3",
 		"tabulator-tables": "^5.4.3"
 	}
 }
