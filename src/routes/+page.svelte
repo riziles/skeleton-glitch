@@ -398,6 +398,6 @@
 
 </script>
 
-<div class="container h-auto mx-auto flex justify-center items-center">
+<div class="h-auto m-8 mx-auto flex justify-center items-center">
   <Tabulator data = {tdata} dataformat="csv"/>
 </div>

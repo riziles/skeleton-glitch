@@ -24,6 +24,6 @@
   });
 </script>
 
-<div class="h-96 m-4">
+<div class="h-96 max-w-full">
   <div bind:this={tableComponent} ></div>
 </div>

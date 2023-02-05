@@ -7,7 +7,7 @@ const Tabulator_1 = create_ssr_component(($$result, $$props, $$bindings, slots) 
     $$bindings.data(data);
   if ($$props.dataformat === void 0 && $$bindings.dataformat && dataformat !== void 0)
     $$bindings.dataformat(dataformat);
-  return `<div class="${"h-96 m-4"}"><div${add_attribute("this", tableComponent, 0)}></div></div>`;
+  return `<div class="${"h-96 max-w-full"}"><div${add_attribute("this", tableComponent, 0)}></div></div>`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let tdata = `idx,mpg,cyl,displ,hp,weight,accel,yr,origin,name
@@ -404,7 +404,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 390,28.0,4,120.0,79,2625,18.6,82,1,ford ranger
 391,31.0,4,119.0,82,2720,19.4,82,1,chevy s-10
 `;
-  return `<div class="${"container h-auto mx-auto flex justify-center items-center"}">${validate_component(Tabulator_1, "Tabulator").$$render($$result, { data: tdata, dataformat: "csv" }, {}, {})}</div>`;
+  return `<div class="${"h-auto m-8 mx-auto flex justify-center items-center"}">${validate_component(Tabulator_1, "Tabulator").$$render($$result, { data: tdata, dataformat: "csv" }, {}, {})}</div>`;
 });
 export {
   Page as default

@@ -6,7 +6,7 @@ export const handler = init({
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"_app/immutable/start-928b0860.js","imports":["_app/immutable/start-928b0860.js","_app/immutable/chunks/index-cf4e36fc.js","_app/immutable/chunks/singletons-e3b608e1.js","_app/immutable/chunks/index-6d563026.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-44b8a46b.js","imports":["_app/immutable/start-44b8a46b.js","_app/immutable/chunks/index-cf4e36fc.js","_app/immutable/chunks/singletons-e3b608e1.js","_app/immutable/chunks/index-6d563026.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
