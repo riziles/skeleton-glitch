@@ -1,27 +1,20 @@
 <script>
-  import { Modal, modalStore } from '@skeletonlabs/skeleton';
+	import Tabulator from './Tabulator.svelte';
 
-  async function triggerAlert() {
-    const alert = {
-      type: 'alert',
-      title: 'Example Alert',
-      body: `Lorem ipsum dolor sit amet, consectetur 
-        adipiscing elit. Curabitur at mauris ut nisl molestie 
-        eleifend ac a neque. Nunc sit amet malesuada orci. Sed 
-        id consequat neque. Pellentesque vel 
-        urna varius, fringilla odio et, congue diam. 
-        <br /> <br /> 
-        <a href="https://google.com">href</a>`,
-      buttonTextCancel: 'Cancel'
-    };
-  // workaround for scroll issue:
-    await modalStore.trigger(alert);
-    document.querySelector('.modal-body').scrollTop = 0
-  }
+  import { LightSwitch } from '@skeletonlabs/skeleton';
+
+
+  let tdata = [
+    {id:1, name:"Billy Bob", age:12, gender:"male", height:95, col:"red", dob:"14/05/2010"},
+    {id:2, name:"Jenny Jane", age:42, gender:"female", height:142, col:"blue", dob:"30/07/1954"},
+    {id:3, name:"Steve McAlistaire", age:35, gender:"male", height:176, col:"green", dob:"04/11/1982"},,
+    {id:3, name:"Steve McAlistaire", age:35, gender:"male", height:176, col:"green", dob:"04/11/1982"},
+];
+
 </script>
 
-<Modal regionBody = 'max-h-24 overflow-auto' width = 'max-w-xs'/>
+<LightSwitch />
 
-<div class="container h-full mx-auto flex justify-center items-center">
-  <button class="btn variant-filled-primary btn-base" on:click={triggerAlert}> Open Modal </button>
+<div class="container h-auto mx-auto flex justify-center items-center">
+  <Tabulator data = {tdata} />
 </div>
