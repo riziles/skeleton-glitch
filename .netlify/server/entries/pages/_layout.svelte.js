@@ -221,12 +221,15 @@ ${validate_component(AppShell, "AppShell").$$render(
 		${validate_component(AppBar, "AppBar").$$render($$result, {}, {}, {
           trail: () => {
             return `${validate_component(LightSwitch, "LightSwitch").$$render($$result, {}, {}, {})}
-				<a class="${"btn btn-sm variant-ghost-surface"}" href="${"https://discord.gg/EXqV7W8MtY"}" target="${"_blank"}" rel="${"noreferrer"}">Discord</a>
-				<a class="${"btn btn-sm variant-ghost-surface"}" href="${"https://github.com/skeletonlabs/skeleton"}" target="${"_blank"}" rel="${"noreferrer"}">GitHub</a>
+				<a class="${"btn btn-sm variant-ghost-surface"}" href="${"https://github.com/riziles/skeleton-glitch"}" target="${"_blank"}" rel="${"noreferrer"}">Source</a>
 			`;
           },
           lead: () => {
-            return `<strong class="${"text-xl uppercase"}">Skeleton</strong>`;
+            return `<strong><a class="${"text-xl uppercase"}" href="${"https://tabulator.info/"}">Tabulator
+				</a> 
+				in 
+				<a class="${"text-xl uppercase"}" href="${"https://www.skeleton.dev"}">Skeleton
+				</a></strong>`;
           }
         })}
 	`;
