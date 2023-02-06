@@ -35,6 +35,7 @@
 		"@finos/perspective-viewer-d3fc": "^1.9.3",
 		"@finos/perspective-viewer-datagrid": "^1.9.3",
 		"echarts": "^5.4.1",
+		"echarts-gl": "^2.0.9",
 		"tabulator-tables": "^5.4.3"
 	}
 }
