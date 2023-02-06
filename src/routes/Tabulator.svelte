@@ -7,12 +7,46 @@
 
   let tableComponent;
 
+  var rowMenu = [
+    {
+        label:"<i class='fas fa-user'></i> Change Name",
+        action:function(e, row){
+            row.update({name:"Steve Bobberson"});
+        }
+    },
+    {
+        label:"<i class='fas fa-check-square'></i> Select Row",
+        action:function(e, row){
+            row.select();
+        }
+    },
+    {
+        separator:true,
+    },
+    {
+        label:"Admin Functions",
+        menu:[
+            {
+                label:"<i class='fas fa-trash'></i> Delete Row",
+                action:function(e, row){
+                    row.delete();
+                }
+            },
+            {
+                label:"<i class='fas fa-ban'></i> Disabled Option",
+                disabled:true,
+            },
+        ]
+    }
+]
+
   onMount(() => {
     new Tabulator(tableComponent, {
       data: data, //link data to table
       reactiveData:true, //enable data reactivity
       autoColumns:true,
       importFormat:dataformat,
+      rowContextMenu: rowMenu,
       maxHeight:"100%",
       pagination:"local",
       paginationSize:1000,
