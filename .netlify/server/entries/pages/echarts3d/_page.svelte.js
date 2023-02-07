@@ -1,6 +1,5 @@
 import { c as create_ssr_component, f as subscribe, b as add_attribute, v as validate_component } from "../../../chunks/index2.js";
 import "echarts";
-import "echarts-gl";
 import { s as storeLightSwitch } from "../../../chunks/ProgressBar.svelte_svelte_type_style_lang.js";
 const EChart3d = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_storeLightSwitch;

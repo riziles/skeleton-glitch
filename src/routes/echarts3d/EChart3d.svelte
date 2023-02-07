@@ -1,16 +1,16 @@
 <script>
 	import * as echarts from 'echarts';
-	import * as echartsgl from 'echarts-gl'
 	import { onMount } from 'svelte';
 	import { storeLightSwitch } from '@skeletonlabs/skeleton';
 
 	$: condtheme = $storeLightSwitch ? 'dark' : null;
 
-	let myChartDiv, myChart, p, q;
+	let myChartDiv, myChart, p, q, echartsgl;
 
 	export let option;
 
-	onMount(() => {
+	onMount(async () => {
+		echartsgl = await import ('echarts-gl');
 		console.log('test');
 		// Create the echarts instance
 		myChart = echarts.init(myChartDiv, condtheme);
