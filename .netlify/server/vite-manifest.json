@@ -17,7 +17,7 @@
       "_ProgressBar.svelte_svelte_type_style_lang.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-2cd31bfd.css"
+      "_app/immutable/assets/_layout-4c0fdd59.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -37,6 +37,24 @@
     ],
     "css": [
       "_app/immutable/assets/_page-4b5e1bdd.css"
+    ]
+  },
+  "src/routes/echarts/+page.svelte": {
+    "file": "entries/pages/echarts/_page.svelte.js",
+    "src": "src/routes/echarts/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_ProgressBar.svelte_svelte_type_style_lang.js"
+    ]
+  },
+  "src/routes/echarts3d/+page.svelte": {
+    "file": "entries/pages/echarts3d/_page.svelte.js",
+    "src": "src/routes/echarts3d/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_ProgressBar.svelte_svelte_type_style_lang.js"
     ]
   },
   "src/routes/perspective/+page.svelte": {

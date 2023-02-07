@@ -4,12 +4,14 @@ export const manifest = {
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"_app/immutable/start-64a463b6.js","imports":["_app/immutable/start-64a463b6.js","_app/immutable/chunks/index-cf4e36fc.js","_app/immutable/chunks/singletons-e3b608e1.js","_app/immutable/chunks/index-6d563026.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-0336f169.js","imports":["_app/immutable/start-0336f169.js","_app/immutable/chunks/index-43f4d42f.js","_app/immutable/chunks/singletons-854e9b60.js","_app/immutable/chunks/index-41ee5d48.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
 			() => import('./nodes/2.js'),
-			() => import('./nodes/3.js')
+			() => import('./nodes/3.js'),
+			() => import('./nodes/4.js'),
+			() => import('./nodes/5.js')
 		],
 		routes: [
 			{
@@ -20,10 +22,24 @@ export const manifest = {
 				endpoint: null
 			},
 			{
+				id: "/echarts3d",
+				pattern: /^\/echarts3d\/?$/,
+				params: [],
+				page: { layouts: [0], errors: [1], leaf: 4 },
+				endpoint: null
+			},
+			{
+				id: "/echarts",
+				pattern: /^\/echarts\/?$/,
+				params: [],
+				page: { layouts: [0], errors: [1], leaf: 3 },
+				endpoint: null
+			},
+			{
 				id: "/perspective",
 				pattern: /^\/perspective\/?$/,
 				params: [],
-				page: { layouts: [0], errors: [1], leaf: 3 },
+				page: { layouts: [0], errors: [1], leaf: 5 },
 				endpoint: null
 			}
 		],

@@ -3,7 +3,6 @@
 	import * as echartsgl from 'echarts-gl'
 	import { onMount } from 'svelte';
 	import { storeLightSwitch } from '@skeletonlabs/skeleton';
-	import * as tfg from "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
 
 	$: condtheme = $storeLightSwitch ? 'dark' : null;
 
