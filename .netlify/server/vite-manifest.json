@@ -57,6 +57,14 @@
       "_ProgressBar.svelte_svelte_type_style_lang.js"
     ]
   },
+  "src/routes/jspread/+page.svelte": {
+    "file": "entries/pages/jspread/_page.svelte.js",
+    "src": "src/routes/jspread/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "src/routes/perspective/+page.svelte": {
     "file": "entries/pages/perspective/_page.svelte.js",
     "src": "src/routes/perspective/+page.svelte",
