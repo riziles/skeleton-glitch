@@ -17,7 +17,7 @@
       "_ProgressBar.svelte_svelte_type_style_lang.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-4c0fdd59.css"
+      "_app/immutable/assets/_layout-72cab533.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -27,6 +27,19 @@
     "imports": [
       "_index2.js"
     ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
+    "file": "entries/fallbacks/layout.svelte.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/mdsvex01/+layout.js": {
+    "file": "entries/pages/mdsvex01/_layout.js",
+    "src": "src/routes/mdsvex01/+layout.js",
+    "isEntry": true
   },
   "src/routes/+page.svelte": {
     "file": "entries/pages/_page.svelte.js",
@@ -60,6 +73,14 @@
   "src/routes/jspread/+page.svelte": {
     "file": "entries/pages/jspread/_page.svelte.js",
     "src": "src/routes/jspread/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/mdsvex01/+page.svelte": {
+    "file": "entries/pages/mdsvex01/_page.svelte.js",
+    "src": "src/routes/mdsvex01/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index2.js"

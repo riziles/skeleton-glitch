@@ -2,7 +2,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 
 const config = {
 	
-  assetsInclude: ['**/*.hdr'],
+  assetsInclude: ['**/*.hdr',"**/*.JPG","**/*.pdf"],
 	plugins: [sveltekit()]
 };
 

@@ -1,0 +1,95 @@
+Win CP console initial and current in/out Win: (437, 437), (1252, 1252)
+Coding system for system and terminal: 'CP1252'
+---
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 17 Mar. 2022. Version 4.77, version: 4.77.
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+  my-document.tex
+Rule 'xelatex': The following rules & subrules became out-of-date:
+  xelatex
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -file-line-error -shell-escape -recorder  "my-document.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on my-document.synctex.gz.
+Latexmk: Missing bbl file 'my-document.bbl' in following:
+ No file my-document.bbl.
+Latexmk: Getting log file 'my-document.log'
+Latexmk: Examining 'my-document.fls'
+PWD line not in UTF-8
+Latexmk: Examining 'my-document.log'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to 'my-document.xdv'
+Latexmk: Found bibliography file(s) [main.bib]
+Latexmk: applying rule 'bibtex my-document'...
+Rule 'bibtex my-document': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+  my-document.aux
+Rule 'bibtex my-document': The following rules & subrules became out-of-date:
+  bibtex my-document
+------------
+Run number 1 of rule 'bibtex my-document'
+------------
+------------
+Running 'bibtex  "my-document.aux"'
+------------
+This is BibTeX, Version 0.99d (TeX Live 2022)
+The top-level auxiliary file: my-document.aux
+The style file: abbrvnat.bst
+I found no \citation commands---while reading file my-document.aux
+Database file #1: main.bib
+(There was 1 error message)
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+  my-document.aux
+  my-document.bbl
+Rule 'xelatex': The following rules & subrules became out-of-date:
+  xelatex
+------------
+Run number 2 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -file-line-error -shell-escape -recorder  "my-document.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on my-document.synctex.gz.
+Latexmk: Getting log file 'my-document.log'
+Latexmk: Examining 'my-document.fls'
+PWD line not in UTF-8
+Latexmk: Examining 'my-document.log'
+Latexmk: Found input bbl file 'my-document.bbl'
+Latexmk: Log file says output to 'my-document.xdv'
+Latexmk: Found bibliography file(s) [main.bib]
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+  my-document.xdv
+   Rule(s) that have been run and require run of dependent rule:
+      'xelatex' which requires run of 'xdvipdfmx'
+Rule 'xdvipdfmx': The following rules & subrules became out-of-date:
+  xdvipdfmx
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -E -o "my-document.pdf"  "my-document.xdv"'
+------------
+my-document.xdv -> my-document.pdf
+[1]
+32683 bytes written
+Reverting Windows console CPs to (in,out) = (437,437)
+Latexmk: All targets (my-document.xdv my-document.pdf) are up-to-date

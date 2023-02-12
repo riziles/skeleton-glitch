@@ -1,8 +1,9 @@
-
+import * as universal from '../entries/pages/mdsvex01/_layout.js';
 
 export const index = 2;
-export const component = async () => (await import('../entries/pages/_page.svelte.js')).default;
-export const file = '_app/immutable/components/pages/_page.svelte-8d0d7825.js';
-export const imports = ["_app/immutable/components/pages/_page.svelte-8d0d7825.js","_app/immutable/chunks/index-39367489.js"];
-export const stylesheets = ["_app/immutable/assets/_page-72318880.css"];
+export const component = async () => (await import('../entries/fallbacks/layout.svelte.js')).default;
+export const file = '_app/immutable/components/layout.svelte-1a8d6a1f.js';
+export { universal };
+export const imports = ["_app/immutable/components/layout.svelte-1a8d6a1f.js","_app/immutable/chunks/index-39367489.js","_app/immutable/modules/pages/mdsvex01/_layout.js-e992bf42.js","_app/immutable/chunks/_layout-da46b06b.js"];
+export const stylesheets = [];
 export const fonts = [];
