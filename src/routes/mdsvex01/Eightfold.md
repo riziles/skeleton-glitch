@@ -36,7 +36,13 @@ But then I remembered the beautiful LaTeX PDF documents I created with Jupyter B
 and decided to stick with Python.
 
 But then I learned about [Myst JS](https://myst-tools.org/docs/mystjs)! And I thought,
-what if I build a website in Javascript and used Myst JS to convert it to PDF!
+what if I build a website in Javascript and used Myst JS to convert it to PDF!?
+
+[A PDF Version of this page](https://flourishing-hotteok-608239.netlify.app/my-document.pdf)
+
+This website was built with SvelteKit, Skeleton, Tailwind,
+Plotly and MDsveX. Will add links shortly.
+Typing on my phone right now!
 
 <Chart >
 
@@ -47,7 +53,4 @@ what if I build a website in Javascript and used Myst JS to convert it to PDF!
 ## Some More Markdown
 
 A lot
-
-[link](/my-document.pdf)
-
 
