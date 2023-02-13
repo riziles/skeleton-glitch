@@ -3,7 +3,6 @@
 
 <style>
 	div {
-		background: pink;
 		border: 23px solid orange;
 		padding: 0 15px;
 		width: 400px;
