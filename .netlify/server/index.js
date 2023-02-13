@@ -1,8 +1,9 @@
 import * as devalue from "devalue";
 import { r as readable, w as writable } from "./chunks/index.js";
-import { a as assets, b as base, p as public_env, v as version, o as options, g as get_hooks, s as set_public_env } from "./chunks/internal.js";
+import { a as assets, b as base, p as public_env, v as version, s as set_public_env } from "./chunks/shared.js";
 import { parse, serialize } from "cookie";
 import * as set_cookie_parser from "set-cookie-parser";
+import { options, get_hooks } from "./internal.js";
 const DEV = false;
 function negotiate(accept, types) {
   const parts = [];

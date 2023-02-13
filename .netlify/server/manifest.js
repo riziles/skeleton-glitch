@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["favicon.png","my-document.pdf"]),
 	mimeTypes: {".png":"image/png",".pdf":"application/pdf"},
 	_: {
-		entry: {"file":"_app/immutable/start-4362c8bf.js","imports":["_app/immutable/start-4362c8bf.js","_app/immutable/chunks/index-39367489.js","_app/immutable/chunks/singletons-6c4da90d.js","_app/immutable/chunks/index-ed4df99f.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-f2a37d49.js","imports":["_app/immutable/start-f2a37d49.js","_app/immutable/chunks/index-39367489.js","_app/immutable/chunks/singletons-98cd1d9d.js","_app/immutable/chunks/index-ed4df99f.js","_app/immutable/chunks/shared-2a17d754.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),

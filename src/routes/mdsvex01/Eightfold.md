@@ -17,6 +17,10 @@ exports:
 import Chart from './Chart.svelte'
 import capture_path from '$lib/assets/Capture.JPG';
 import pdflink from '$lib/assets/my-document.pdf';
+import { assets } from '$app/paths';
+import Seriously from './Seriously.md'
+
+let assStr = String(assets)
 </script>
 
 ## How I Stopped Worrying and Learned to Love Javascript
@@ -38,11 +42,11 @@ and decided to stick with Python.
 But then I learned about [Myst JS](https://myst-tools.org/docs/mystjs)! And I thought,
 what if I build a website in Javascript and used Myst JS to convert it to PDF!?
 
-[A PDF Version of this page](https://flourishing-hotteok-608239.netlify.app/my-document.pdf)
+## It Worked!
 
-This website was built with SvelteKit, Skeleton, Tailwind,
-Plotly and MDsveX. Will add links shortly.
-Typing on my phone right now!
+[A PDF Version of this page]({assStr}/my-document.pdf)
+
+## Some More Markdown
 
 <Chart >
 
@@ -50,7 +54,61 @@ Typing on my phone right now!
 
 </Chart>
 
-## Some More Markdown
 
-A lot
+I can do equations with $\LaTeX$:
+
+$$
+\frac{x}{x-1} < r_{23} 
+$$
+
+Also inline: $x_{i-1}$ So far so good!
+
+What about this Javascript components?
+
+<Seriously>
+For some reason, inline math doesn't work when
+passed to a Svelte component using the slot method ($x+1$),
+but double dollar signs do work:
+
+$$x_{i-1}+1 < 5$$
+
+Going to try using Mathlifier.
+Incidentally, Markdown links don't work inside slots either.
+</Seriously>
+
+Codeblocks seem to work fine
+
+```javascript
+
+  import { onMount } from 'svelte';
+	
+	let headerText;
+
+  export let plotHeader = '';
+
+  export let data = [{
+    x: ['giraffes', 'orangutans', 'monkeys'],
+    y: [20, 14, 23],
+    type: 'bar'
+  }];
+
+  onMount(() => {
+		headerText = 'A Chart !';
+		let plotDiv = document.getElementById('plotDiv');				
+		let Plot = new Plotly.newPlot(plotDiv, data, {}, {showSendToCloud:true}); 
+  });
+       
+```
+
+## Credits
+
+This website was built with 
+[SvelteKit](https://kit.svelte.dev/), 
+[Skeleton](https://www.skeleton.dev/), 
+[Tailwind](https://tailwindcss.com/),
+[Plotly](https://plotly.com/javascript/),
+[MDsveX](https://mdsvex.pngwn.io/),
+[rehype-katex-svelte](https://github.com/kwshi/rehype-katex-svelte),
+[remark-math](https://github.com/remarkjs/remark-math) and
+[MyST](https://github.com/executablebooks/mystjs)!
 

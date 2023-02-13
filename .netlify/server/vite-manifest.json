@@ -5,7 +5,17 @@
     "isEntry": true,
     "imports": [
       "_index.js",
-      "_internal.js"
+      "_shared.js",
+      ".svelte-kit/generated/server/internal.js"
+    ]
+  },
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_shared.js"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -83,7 +93,11 @@
     "src": "src/routes/mdsvex01/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index2.js",
+      "_shared.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-3ba3d264.css"
     ]
   },
   "src/routes/perspective/+page.svelte": {
@@ -98,25 +112,14 @@
       "_app/immutable/assets/_page-72647583.css"
     ]
   },
-  ".svelte-kit/generated/server/internal.js": {
-    "file": "internal.js",
-    "src": ".svelte-kit/generated/server/internal.js",
-    "isEntry": true,
-    "imports": [
-      "_internal.js"
-    ]
-  },
   "_index.js": {
     "file": "chunks/index.js",
     "imports": [
       "_index2.js"
     ]
   },
-  "_internal.js": {
-    "file": "chunks/internal.js",
-    "imports": [
-      "_index2.js"
-    ]
+  "_shared.js": {
+    "file": "chunks/shared.js"
   },
   "_index2.js": {
     "file": "chunks/index2.js"

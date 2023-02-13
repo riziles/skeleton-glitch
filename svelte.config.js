@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-netlify';
 import preprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
+import remarkMath from 'remark-math';
+import rehypeKatexSvelte from 'rehype-katex-svelte';
 
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -13,7 +15,10 @@ const config = {
 		preprocess({
 			postcss: true,
 		}),
-		mdsvex({ extensions: ['.svx', '.md'] })
+		mdsvex({ extensions: ['.svx', '.md'],
+
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatexSvelte] })
 	],
 };
 
