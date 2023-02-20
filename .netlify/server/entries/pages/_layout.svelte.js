@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, b as add_attribute, d as compute_slots, f as subscribe, g as createEventDispatcher, v as validate_component } from "../../chunks/index2.js";
+import { c as create_ssr_component, e as escape, d as add_attribute, f as compute_slots, b as subscribe, g as createEventDispatcher, v as validate_component } from "../../chunks/index2.js";
 import { s as storeLightSwitch, a as storePrefersDarkScheme } from "../../chunks/ProgressBar.svelte_svelte_type_style_lang.js";
 const themeSkeleton = "";
 const all = "";

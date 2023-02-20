@@ -6,7 +6,7 @@ export const handler = init({
 	assets: new Set(["favicon.png","my-document.pdf"]),
 	mimeTypes: {".png":"image/png",".pdf":"application/pdf"},
 	_: {
-		entry: {"file":"_app/immutable/start-f2a37d49.js","imports":["_app/immutable/start-f2a37d49.js","_app/immutable/chunks/index-39367489.js","_app/immutable/chunks/singletons-98cd1d9d.js","_app/immutable/chunks/index-ed4df99f.js","_app/immutable/chunks/shared-2a17d754.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-cf726ed5.js","imports":["_app/immutable/start-cf726ed5.js","_app/immutable/chunks/index-c768aac6.js","_app/immutable/chunks/singletons-c289e0fc.js","_app/immutable/chunks/index-02ac572a.js","_app/immutable/chunks/shared-2a17d754.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
@@ -14,7 +14,8 @@ export const handler = init({
 			() => import('../server/nodes/4.js'),
 			() => import('../server/nodes/5.js'),
 			() => import('../server/nodes/6.js'),
-			() => import('../server/nodes/8.js')
+			() => import('../server/nodes/8.js'),
+			() => import('../server/nodes/9.js')
 		],
 		routes: [
 			{
@@ -50,6 +51,13 @@ export const handler = init({
 				pattern: /^\/perspective\/?$/,
 				params: [],
 				page: { layouts: [0], errors: [1], leaf: 6 },
+				endpoint: null
+			},
+			{
+				id: "/ssd",
+				pattern: /^\/ssd\/?$/,
+				params: [],
+				page: { layouts: [0], errors: [1], leaf: 7 },
 				endpoint: null
 			}
 		],

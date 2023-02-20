@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as subscribe, b as add_attribute, v as validate_component } from "../../../chunks/index2.js";
+import { c as create_ssr_component, b as subscribe, d as add_attribute, v as validate_component } from "../../../chunks/index2.js";
 import "@finos/perspective";
 import { s as storeLightSwitch } from "../../../chunks/ProgressBar.svelte_svelte_type_style_lang.js";
 const themes = "";

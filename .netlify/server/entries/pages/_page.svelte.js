@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as add_attribute, v as validate_component } from "../../chunks/index2.js";
+import { c as create_ssr_component, d as add_attribute, v as validate_component } from "../../chunks/index2.js";
 const tabulator_simple_min = "";
 const Tabulator_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data, dataformat } = $$props;

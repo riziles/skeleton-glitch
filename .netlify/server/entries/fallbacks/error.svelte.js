@@ -1,4 +1,4 @@
-import { i as getContext, c as create_ssr_component, f as subscribe, e as escape } from "../../chunks/index2.js";
+import { j as getContext, c as create_ssr_component, b as subscribe, e as escape } from "../../chunks/index2.js";
 const getStores = () => {
   const stores = getContext("__svelte__");
   return {

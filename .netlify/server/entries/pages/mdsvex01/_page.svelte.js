@@ -24,12 +24,12 @@ const Chart = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Seriously_md_svelte_type_style_lang = "";
 const css = {
-  code: "div.svelte-128izt6{background:pink;border:23px solid orange;padding:0 15px;width:400px;text-align:center;transform:translateX(-200px);animation:6s svelte-128izt6-slide infinite alternate ease-in-out}@keyframes svelte-128izt6-slide{from{transform:translateX(-200px)\n		}to{transform:translateX(200px)\n		}}",
+  code: "div.svelte-5gpr0n{border:23px solid orange;padding:0 15px;width:400px;text-align:center;transform:translateX(-200px);animation:6s svelte-5gpr0n-slide infinite alternate ease-in-out}@keyframes svelte-5gpr0n-slide{from{transform:translateX(-200px)\n		}to{transform:translateX(200px)\n		}}",
   map: null
 };
 const Seriously = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="${"svelte-128izt6"}">${slots.default ? slots.default({}) : ``}</div>`;
+  return `<div class="${"svelte-5gpr0n"}">${slots.default ? slots.default({}) : ``}</div>`;
 });
 const Eightfold = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let assStr = String(assets);

@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["favicon.png","my-document.pdf"]),
 	mimeTypes: {".png":"image/png",".pdf":"application/pdf"},
 	_: {
-		entry: {"file":"_app/immutable/start-f2a37d49.js","imports":["_app/immutable/start-f2a37d49.js","_app/immutable/chunks/index-39367489.js","_app/immutable/chunks/singletons-98cd1d9d.js","_app/immutable/chunks/index-ed4df99f.js","_app/immutable/chunks/shared-2a17d754.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-cf726ed5.js","imports":["_app/immutable/start-cf726ed5.js","_app/immutable/chunks/index-c768aac6.js","_app/immutable/chunks/singletons-c289e0fc.js","_app/immutable/chunks/index-02ac572a.js","_app/immutable/chunks/shared-2a17d754.js","_app/immutable/chunks/preload-helper-41c905a7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -14,7 +14,8 @@ export const manifest = {
 			() => import('./nodes/5.js'),
 			() => import('./nodes/6.js'),
 			() => import('./nodes/7.js'),
-			() => import('./nodes/8.js')
+			() => import('./nodes/8.js'),
+			() => import('./nodes/9.js')
 		],
 		routes: [
 			{
@@ -57,6 +58,13 @@ export const manifest = {
 				pattern: /^\/perspective\/?$/,
 				params: [],
 				page: { layouts: [0], errors: [1], leaf: 8 },
+				endpoint: null
+			},
+			{
+				id: "/ssd",
+				pattern: /^\/ssd\/?$/,
+				params: [],
+				page: { layouts: [0], errors: [1], leaf: 9 },
 				endpoint: null
 			}
 		],
